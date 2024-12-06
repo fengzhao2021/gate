@@ -1,0 +1,136 @@
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/dark-seraph.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -3;
+    animation: fadeIn 1s ease-out;
+}
+
+.user-status {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 25px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.user-status span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+}
+
+.auth-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.number-display {
+    font-size: 64px;
+    color: #FF0000;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.6),
+                 0 0 40px rgba(255, 0, 0, 0.3),
+                 0 0 60px rgba(255, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: -30px;
+}
+
+.blue-box {
+    background: transparent;
+    border-radius: 15px;
+    padding: 20px 25px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 8px 25px rgba(51, 153, 255, 0.3);
+    width: 80%;
+    margin: 100px auto 0;
+    min-width: 200px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-box {
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    width: 100px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 220px auto 0;
+}
+
+.trigger-text {
+    color: #FFD700;
+    font-size: 24px;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 12px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8),
+                 0 0 20px rgba(255, 215, 0, 0.6),
+                 0 0 30px rgba(255, 215, 0, 0.4);
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.red-box:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 51, 51, 0.3);
+}
+
+.red-box:hover .trigger-text {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.auth-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.auth-links a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
